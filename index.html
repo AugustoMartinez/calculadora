@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <form action="">
+        <div class="calculadora">
+            <div class="calculadora__display" id="display">
+                <div id="history-calculator">3,401</div>
+                <div id="value-current">
+                    <p id="text-current"></p>
+                </div>
+            </div>
+            <div class="calculadora__teclado">
+                <button type="button" class="boton utilidades" id="borrar" onclick="limpiar();">C</button>
+                <button type="button" class="boton utilidades" id="parentesis" onclick="mostrar('(');">CE</button>
+                <button type="button" class="boton utilidades" id="porcentaje" onclick="mostrar('%')">%</button>
+                <button type="button" class="boton dividir" id="operador" onclick="mostrar('/');">/</button>
+                <button type="button" class="boton" id="numero" onclick="mostrar(7);">7</button>
+                <button type="button" class="boton" id="numero" onclick="mostrar(8);">8</button>
+                <button type="button" class="boton" id="numero" onclick="mostrar(9);">9</button>
+                <button type="button" class="boton multiplicar" id="operador" onclick="mostrar('*');">x</button>
+                <button type="button" class="boton" id="numero" onclick="mostrar(4);">4</button>
+                <button type="button" class="boton" id="numero" onclick="mostrar(5);">5</button>
+                <button type="button" class="boton" id="numero" onclick="mostrar(6);">6</button>
+                <button type="button" class="boton restar" id="operador" onclick="mostrar('-');">-</button>
+                <button type="button" class="boton" id="numero" onclick="mostrar(1);">1</button>
+                <button type="button" class="boton" id="numero" onclick="mostrar(2);">2</button>
+                <button type="button" class="boton" id="numero" onclick="mostrar(3);">3</button>
+                <button type="button" class="boton sumar" id="operador" onclick="mostrar('+');">+</button>
+                <button type="button" class="boton cero" id="numero" onclick="mostrar(0);">0</button>
+                <button type="button" class="boton" id="numero" onclick="mostrar('.');">.</button>
+                <button type="button" class="boton igual" onclick="resultado();">=</button>
+            </div>
+        </div>
+    </form>
+    <script src="./js/index.js"></script>
+</body>
+</html>
